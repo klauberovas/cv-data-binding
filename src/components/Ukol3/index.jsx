@@ -12,9 +12,13 @@ export const Ukol3 = () => {
       <h1>Úkol 3</h1>
       <label>
         Login:
-        <input type="text" />
+        <input
+          value={login}
+          onChange={(e) => setLogin(e.target.value)}
+          type="text"
+        />
       </label>
-      <button>Vymazat</button>
+      <button onClick={() => setLogin('')}>Vymazat</button>
     </>
   );
 };
